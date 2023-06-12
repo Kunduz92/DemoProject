@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Suite">
+    
+    <test name="katalon">
+      <parameter name="expectedHeader" value="Make Appointment"> </parameter>
+        <parameter name="backGroundColor" value="rgba(51, 122, 183, 1)"> </parameter>
+        <parameter name="facility" value="Hongkong CURA Healthcare Center"> </parameter>
+        <parameter name="healthcare" value="Medicaid"> </parameter>
+        <parameter name="date" value="02/02/2023"> </parameter>
+        <parameter name="comment" value="I would like to make an appointment"> </parameter>
+        <parameter name="confirmationHeader" value="Appointment Confirmation"> </parameter>
+        <parameter name="readmission" value="Yes"></parameter>
+        
+        
+        <classes>
+            
+            <class name="com.test.katalon.tests.MainTest"> </class>
+            <class name="com.test.katalon.tests.LoginTest"> </class>
+            <class name="com.test.katalon.tests.AppointmentTest"> </class>
+            
+        </classes>
+        
+        
+    </test>
+    
+    
+</suite>
